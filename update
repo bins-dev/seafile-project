@@ -51,5 +51,5 @@ COMMIT_MSG=$(echo "$TOP_NAMES" | paste -sd ';' -)"更新"
 git commit -m "$COMMIT_MSG"
 
 # 推送到远程仓库
-git push origin main
+git push origin master
 
