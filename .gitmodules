@@ -4,3 +4,6 @@
 [submodule "seafile-client"]
 	path = seafile-client
 	url = https://github.com/bins-dev/seafile-client.git
+[submodule "seafile"]
+	path = seafile
+	url = https://github.com/bins-dev/seafile.git
