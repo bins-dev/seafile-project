@@ -7,3 +7,6 @@
 [submodule "seafile"]
 	path = seafile
 	url = https://github.com/bins-dev/seafile.git
+[submodule "seahub"]
+	path = seahub
+	url = https://github.com/bins-dev/seahub.git
