@@ -23,6 +23,7 @@ for script in "${scripts[@]}"; do
     echo -e "\e[31m***********************************************\e[0m"
 
     ./"$script"
+    echo ""
 done
 
 # 获取git仓库根目录
@@ -55,4 +56,3 @@ git commit -m "$COMMIT_MSG"
 
 # 推送到远程仓库
 git push origin master
-
