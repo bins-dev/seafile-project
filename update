@@ -18,7 +18,10 @@ for script in "${scripts[@]}"; do
     if [ ! -x "$script" ]; then
         chmod +x "$script"
     fi
-    echo "执行: $script"
+    echo -e "\e[31m***********************************************\e[0m"
+    echo -e "\e[31m执行: $script\e[0m"
+    echo -e "\e[31m***********************************************\e[0m"
+
     ./"$script"
 done
 
