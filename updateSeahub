@@ -7,5 +7,5 @@ if ! git remote | grep -q "^${REPO_NAME}\$"; then
 fi
 git pull ${REPO_NAME} ${DEFAULT_BRANCH}
 git push origin ${DEFAULT_BRANCH}
-git fetch ${REPO_NAME} --tags ${DEFAULT_BRANCH}
-git push origin ${DEFAULT_BRANCH} --tags
+git fetch ${REPO_NAME} --tags ${DEFAULT_BRANCH} -f
+git push origin ${DEFAULT_BRANCH} --tags -f
