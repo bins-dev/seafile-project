@@ -1,12 +1,16 @@
 [submodule "seafile-server"]
 	path = seafile-server
 	url = https://github.com/bins-dev/seafile-server.git
+	branch = master
 [submodule "seafile-client"]
 	path = seafile-client
 	url = https://github.com/bins-dev/seafile-client.git
+	branch = master
 [submodule "seafile"]
 	path = seafile
 	url = https://github.com/bins-dev/seafile.git
+	branch = master
 [submodule "seahub"]
 	path = seahub
 	url = https://github.com/bins-dev/seahub.git
+	branch = master

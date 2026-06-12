@@ -2,10 +2,9 @@
 REPO_NAME=seafile
 DEFAULT_BRANCH=master
 cd ${REPO_NAME}
+git checkout ${DEFAULT_BRANCH}
 if ! git remote | grep -q "^${REPO_NAME}\$"; then
 	git remote add ${REPO_NAME} https://github.com/haiwen/seafile.git
 fi
-git pull ${REPO_NAME} ${DEFAULT_BRANCH}
-git push origin ${DEFAULT_BRANCH}
-git fetch ${REPO_NAME} --tags ${DEFAULT_BRANCH} -f
-git push origin ${DEFAULT_BRANCH} --tags -f
+git pull ${REPO_NAME} ${DEFAULT_BRANCH} && git push origin ${DEFAULT_BRANCH}
+git fetch ${REPO_NAME} --tags ${DEFAULT_BRANCH} -f && git push origin ${DEFAULT_BRANCH} --tags -f
